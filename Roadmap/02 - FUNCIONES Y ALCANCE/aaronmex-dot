@@ -1,0 +1,74 @@
+# Definir una funcion con DEF e invocarla, sin parametros
+def resultado():
+      print('Hola proximo analista de datos')
+resultado()
+
+# Funcion con un parametro
+def favourite_book(title):
+   print(f'One of my favourite books is {title}')
+favourite_book(title)
+
+# Funcion con varios parametros
+def dog (name, edad)
+   print(f'{name} is young, it has  {edad} years old.')
+dog ('Solovino',7)
+
+# Funcion con return
+Definimos primero la funcion
+def price():
+  return 10
+my_price = price()
+print(my_price)
+
+
+# Funciones anidadas o inner functions
+def main_screen(name):
+   print('Main screenshot')
+     def second_screen():
+       print(f'Veremos que {name} es buena! ' )
+     second_screen()
+main_screen('Mouderev')
+
+# Funcion predefinida - built-in Functions
+print(f'Muestra el maximo de los siguientes numeros 1 ,2 ,3 ,4, 5 {max( 1,3,4,5)}')
+
+
+Variable local # se crea dentro de una funcion
+
+def fun():
+    sport = 'soccer'
+    print(f'I love playing {sport}')
+fun()
+
+#Variable global  se usa en todo el codigo si asi se desea. 
+mundo = 'El mundo es inmenso'
+
+"""
+Crea una función que reciba dos parámetros de tipo cadena de texto y retorne un número.
+- La función imprime todos los números del 1 al 100. Teniendo en cuenta que:
+- Si el número es múltiplo de 3, muestra la cadena de texto del primer parámetro.
+- Si el número es múltiplo de 5, muestra la cadena de texto del segundo parámetro.
+- Si el número es múltiplo de 3 y de 5, muestra las dos cadenas de texto concatenadas.
+- La función retorna el número de veces que se ha impreso el número en lugar de los textos.
+"""
+
+def function(parametro1 , parametro2):
+    # Para hacer que retorne un numero, debemos cambiar de string a integer
+    conteo = 0 # comienza desde cero porque desde ahi nos lo han pedido
+    # Usaremos un for loop para imprimir todos los numeros del 1 al 100
+    for i in range(1, 101):
+            if i % 3 == 0 and i % 5 == 0:
+                print(parametro1 + parametro2)
+            elif i % 3 == 0:
+                print(parametro1)
+            elif i % 5 == 0:
+                print(parametro2)
+            else:
+                print(i)
+                conteo += 1
+    
+    
+    return conteo
+    
+print( function ('Hola', ' Mundo'))
+        
